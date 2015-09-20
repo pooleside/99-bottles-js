@@ -15,3 +15,9 @@ describe('twoBottlesSong', function() {
     expect(twoBottlesSong(2)).to.contain("1 bottle");
   });
 });
+
+describe('mainBottlesSong', function() {
+  it("returns the full song, decreasing bottle count by one ", function() {
+    expect(mainBottlesSong(10)).to.contain("9 bottles");
+  });
+});
