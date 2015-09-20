@@ -11,3 +11,8 @@ var twoBottlesSong = function(staticNumber) {
   var userNumber= staticNumber;
   return userNumber + " bottles of beer on the wall, "  +  userNumber + " bottles of beer. Take one down, pass it around " + (userNumber -1) + " bottle of beer on the wall.<br/>"
 }
+
+var mainBottlesSong = function(staticNumber) {
+  var userNumber= staticNumber;
+  return userNumber + " bottles of beer on the wall, "  +  userNumber + " bottles of beer. Take one down, pass it around " + (userNumber -1) + " bottles of beer on the wall.<br/>"
+}
