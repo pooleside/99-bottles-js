@@ -23,7 +23,7 @@ describe('mainBottlesSong', function() {
 });
 
 describe('bottleCount', function() {
-  it("returns the full song after user input", function() {
-    expect(bottleCount(8)).to.contain("wall");
+  it("decreases bottle count down to zero", function() {
+    expect(bottleCount(8)).to.contain("0");
   });
 });
