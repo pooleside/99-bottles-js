@@ -4,7 +4,7 @@
 
 ## Description
 A program that takes as input the number of beers on the wall (an arbitrary number entered by the user).
-With this number as a starting point, the program will output the words to the Beer song repeating down to zero. 
+With this number as a starting point, the program will output the words to the Beer song repeating down to zero.
 
 
 ## Setup
