@@ -21,3 +21,9 @@ describe('mainBottlesSong', function() {
     expect(mainBottlesSong(10)).to.contain("9 bottles");
   });
 });
+
+describe('bottleCount', function() {
+  it("returns the full song after user input", function() {
+    expect(bottleCount(8)).to.contain("wall");
+  });
+});
