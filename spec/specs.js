@@ -24,6 +24,6 @@ describe('mainBottlesSong', function() {
 
 describe('bottleCount', function() {
   it("decreases bottle count down to zero", function() {
-    expect(bottleCount(8)).to.contain("0");
+    expect(bottleCount(8)).to.contain("No more");
   });
 });
