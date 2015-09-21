@@ -1,3 +1,4 @@
+//main function
 var bottleCount = function (userNumber) {
   var beerSong = "";  //stays outside the loop.  Gets added to by beerLine.
   while (userNumber >= 0) {
@@ -36,3 +37,14 @@ var twoBottlesSong = function(userNumber) {
 var mainBottlesSong = function(userNumber) {
   return userNumber + " bottles of beer on the wall, "  +  userNumber + " bottles of beer. Take one down, pass it around " + (userNumber -1) + " bottles of beer on the wall.<br/>"
 }
+$(document).ready(function() {
+  $("form#bottleCount").submit(function(event) {
+    var userNumber = parseInt($("input#userNumber").val());
+    var beerSong = bottleCount(userNumber);
+
+    $("#input").text(userNumber);
+    $("#beerSong").html(beerSong);
+    $(".result").show();
+    event.preventDefault();
+  });
+});
